@@ -1,0 +1,18 @@
+theme = Vesper
+window-padding-color = background
+font-family = "JetBrainsMono Nerd Font"
+font-size = 18
+confirm-close-surface = false
+unfocused-split-opacity = 1
+unfocused-split-fill = 000000
+
+keybind = alt+t=new_tab 
+keybind = alt+w=close_surface
+keybind = alt+m=new_split:right
+keybind = alt+n=new_split:down
+
+keybind = alt+h=goto_split:left
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+keybind = alt+j=goto_split:bottom
+macos-option-as-alt = true

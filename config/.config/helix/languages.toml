@@ -1,0 +1,95 @@
+[grammar]
+name = "roc"
+
+[grammar.source]
+git = "https://github.com/faldor20/tree-sitter-roc.git"
+rev = "ef46edd0c03ea30a22f7e92bc68628fb7231dc8a"
+
+[[language]]
+auto-format = true
+name = "go"
+scope = "source.go"
+
+[language.formatter]
+command = "goimports"
+
+[[language]]
+auto-format = true
+name = "typescript"
+scope = "source.ts"
+language-servers = ["typescript-language-server"]
+
+[language.indent]
+tab-width = 4
+unit = " "
+
+[[language]]
+auto-format = true
+name = "javascript"
+scope = "source.js"
+language-servers = ["typescript-language-server"]
+
+[language.indent]
+tab-width = 4
+unit = " "
+
+[[language]]
+name = "nix"
+scope = "source.nix"
+
+[language.formatter]
+command = "nixpkgs-fmt"
+
+[[language]]
+auto-format = true
+file-types = ["scm"]
+language-servers = ["steel-language-server"]
+name = "scheme"
+scope = "source.scm"
+
+[language.formatter]
+args = ["fmt", "-i"]
+command = "raco"
+
+[[language]]
+file-types = ["dl"]
+language-servers = ["souffle-lsp"]
+name = "datalog"
+scope = "source.dl"
+
+[[language]]
+auto-format = true
+comment-token = "#"
+file-types = ["roc"]
+injection-regex = "roc"
+language-servers = ["roc-ls"]
+name = "roc"
+roots = []
+scope = "source.roc"
+shebangs = ["roc"]
+
+[language.formatter]
+args = ["format", "--stdin", "--stdout"]
+command = "roc"
+
+[language.indent]
+tab-width = 2
+unit = "  "
+
+[language-server.roc-ls]
+command = "roc_language_server"
+
+[language-server.rust-analyzer.check]
+command = "clippy"
+
+[language-server.souffle-lsp]
+args = []
+command = "souffle-lsp"
+
+[language-server.steel-language-server]
+args = []
+command = "steel-language-server"
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]

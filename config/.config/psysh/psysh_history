@@ -1,0 +1,5 @@
+_HiStOrY_V2_
+$palet\040=\040App\134Models\134Palet::first();
+$palet->boxes;\040//\040Test\040hasMany
+$box\040=\040App\134Models\134Box::first();
+$box->palet;\040//\040Test\040belongsTo

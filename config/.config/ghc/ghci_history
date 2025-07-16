@@ -1,0 +1,100 @@
+find
+arr
+arr2
+arr2 = [1..3] ++ [5..10]
+arr = [1..10]
+take 100 primes
+:r
+:l sieve.hs 
+parseTest(regex) "ab|cd"
+:r
+parseTest(regex) "ab|cd"
+parseTest(parseRegex) "ab|cd"
+:r
+parseTest(regex) "ab|cd"
+parseTest(parseRegex) "ab|cd"
+parseTest(regex) "ab|cd"
+:r
+parseTest(regex) "ab|cd"
+:r
+parseTest(regex) "ab|cd"
+:r
+parseTest(regex) "ab|cd"
+parseTest(parseRegex) "ab|cd"
+:r
+parseTest(parseRegex) "ab|cd"
+:set -XOverloadedStrings 
+:r
+:r
+parseTest(parseRegex) "ab|cd"
+:r
+parseTest(parseRegex) "ab|cd"
+parseTest(parseRegex) "ab|cd"
+:r
+parseTest(parseRegex) "ab|cd"
+:set -XOverloadedStrings 
+parseTest(parseRegex) "ab|cd"
+parseToParens = do
+parseTest(some $ parseRegexSymbol) "hello|(a|b)"
+parseTest(some $ parseRegexSymbol) "hello|(a|b)"
+:set -XOverloadedStrings 
+parseTest(some $ parseRegexSymbol) "hello|(a|b)"
+parseTest(some $ parseRegexSymbol) "hello|(a|b)"
+:r
+parseTest(some $ parseRegexSymbol) "hello|(a|b)"
+parseTest(some $ parseRegexSymbol) "hello|"
+parseTest(some $ parseRegexSymbol) "hello"
+parseTest(parseRegexSymbol) "hello"
+:set -XOverloadedStrings
+parseTest(parseRegexSymbol) "hello"
+:r
+:q
+import src/MyLib qualified as MyLib
+import src/MyLib qualified as MyLib
+import MyLib qualified as MyLib
+:q
+import MyLib qualified as MyLib
+:r
+:r
+data Instruction = Start Instruction | Step Intruction | End
+[Start,Step,Step,End,Step]
+[Start,Step,Step,End]
+data Instruction = Start | Step | End deriving(Show,Eq)
+[Start,Step,Step,End]
+data Instruction = Start | Step | End 
+:q
+foldr (\c a -> if c `notElem` ", !" then a + 1 else a) 0 str
+foldl (\a c -> if c `notElem` ", !" then a + 1 else a) 0 str
+foldl (\a c -> if c `notElem` ", !" then a + 1 else a) 0 str
+let str = "FIEK, Inxhinieri Kompjuterike!"
+foldl (\a c -> if c /= ',' && c /= ' ' && c /= '!' then a + 1 else a) 0 str
+fold (\a c -> if c /= ',' && c /= ' ' && c /= '!' then a + 1 else a) 0 str
+fold (\a c -> if c != ',' && c != ' ' && c != '!' then a + 1 else a) 0 str
+length $ filter ((/=',') and (/= ' ' )and (/= '!')) str 
+length $ filter (/=',' and /= ' ' and /= '!') str 
+length $ filter (all $ map (/=) [',' ' ' '!']) str 
+let str = "FIEK, Inxhinieri Kompjuterike!"
+solve eg
+solve eeg
+groupKeysAndLocks $ groupParagraphs $ lines eg
+groupKeysAndLocks $ groupParagraphs $ lines eg
+solve first_input 
+:q
+:r
+solution first_input 
+solution first_input 
+length $ (parse_to_matrix first_input) !! 1
+length (parse_to_matrix first_input) !! 1
+(parse_to_matrix first_input) !! 1
+parse_to_matrix first_input 
+step (State((0,2),parse_to_matrix first_input))
+:r
+step (State((0,2),parse_to_matrix first_input))
+:r
+step (State((0,2),parse_to_matrix first_input))
+:r
+step (State((0,2),parse_to_matrix first_input))
+step (State((0,2),parse_to_matrix first_input)
+:r
+step (State((0,2),parse_to_matrix first_input)
+step (State((0,2),parse_to_matrix first_input)
