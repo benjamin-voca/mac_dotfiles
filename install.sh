@@ -1,4 +1,4 @@
-!#/usr/bin/env bash
+#!/usr/bin/env bash
 # Install formulae
 while read -r pkg; do
   brew install "$pkg"
