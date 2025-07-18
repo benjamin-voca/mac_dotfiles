@@ -50,15 +50,15 @@ status is-interactive; and begin
         git remote add origin git@github.com:benjamin-voca/(basename (pwd)).git
         git push
     end
-    set -gx PATH "/usr/local/opt/openjdk/bin:$PATH"
+    # set -gx PATH "/usr/local/opt/openjdk/bin:$PATH"
     fish_add_path -ag ~/.config/composer/vendor/bin
-    set -gx CPPFLAGS -I/usr/local/opt/openjdk/include
-    set -gx EDITOR /usr/local/bin/hx
+    # set -gx CPPFLAGS -I/usr/local/opt/openjdk/include
+    set -gx EDITOR /opt/homebrew/bin/hx
 end
 
 # pnpm
-set -gx PNPM_HOME "/Users/benjamin/Library/pnpm"
+set -gx PNPM_HOME /Users/benjamin/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
